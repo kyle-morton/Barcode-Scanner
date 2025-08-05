@@ -120,6 +120,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
         }
         
         // we found it, return our barcode to the delegate
+//        captureSession.stopRunning(); // only do this if you want to restart the camera view w/ a restart button
         scannerDelete.didFind(barcode: barcode)
     }
 }
